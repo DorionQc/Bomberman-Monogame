@@ -45,78 +45,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\BlockCollisionEventArgs.cs">
-      <Link>BlockCollisionEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\CancellableEventArgs.cs">
-      <Link>CancellableEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\CaseEventArgs.cs">
-      <Link>CaseEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\KickedBombEventArgs.cs">
-      <Link>KickedBombEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\MultiCaseEventArgs.cs">
-      <Link>MultiCaseEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\MultiFireEventArgs.cs">
-      <Link>MultiFireEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\CustomEventArgs\ShootBombEventArgs.cs">
-      <Link>ShootBombEventArgs.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\AbsEntity.cs">
-      <Link>AbsEntity.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\AbsMoveableEntity.cs">
-      <Link>AbsMoveableEntity.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\Bomb.cs">
-      <Link>Bomb.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\EntityManager.cs">
-      <Link>EntityManager.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\Fire.cs">
-      <Link>Fire.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\ITexturable.cs">
-      <Link>ITexturable.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\Joueur.cs">
-      <Link>Joueur.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Entities\PlayerPositions.cs">
-      <Link>PlayerPositions.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\KeyWrapper.cs">
-      <Link>KeyWrapper.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Maps\Cases\AbsCase.cs">
-      <Link>AbsCase.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Maps\Cases\CaseBonus.cs">
-      <Link>CaseBonus.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Maps\Cases\CaseSolidWall.cs">
-      <Link>CaseSolidWall.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Maps\Cases\CaseVide.cs">
-      <Link>CaseVide.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Maps\Cases\CaseWall.cs">
-      <Link>CaseWall.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\Maps\Map.cs">
-      <Link>Map.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Desktop\C# Stuffs\Jeu Comm\Jeu Comm\TextureManager.cs">
-      <Link>TextureManager.cs</Link>
-    </Compile>
+    <Compile Include="AbsCase.cs" />
+    <Compile Include="AbsEntity.cs" />
+    <Compile Include="AbsMoveableEntity.cs" />
+    <Compile Include="BlockCollisionEventArgs.cs" />
+    <Compile Include="Bomb.cs" />
+    <Compile Include="CancellableEventArgs.cs" />
+    <Compile Include="CaseBonus.cs" />
+    <Compile Include="CaseEventArgs.cs" />
+    <Compile Include="CaseSolidWall.cs" />
+    <Compile Include="CaseVide.cs" />
+    <Compile Include="CaseWall.cs" />
+    <Compile Include="EntityManager.cs" />
+    <Compile Include="Fire.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="ITexturable.cs" />
+    <Compile Include="Joueur.cs" />
+    <Compile Include="KeyWrapper.cs" />
+    <Compile Include="KickedBombEventArgs.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MultiCaseEventArgs.cs" />
+    <Compile Include="MultiFireEventArgs.cs" />
+    <Compile Include="PlayerPositions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShootBombEventArgs.cs" />
+    <Compile Include="TextureManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Content.mgcb" />
