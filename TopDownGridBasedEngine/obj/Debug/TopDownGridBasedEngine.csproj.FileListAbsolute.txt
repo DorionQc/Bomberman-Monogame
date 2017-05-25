@@ -1,0 +1,17 @@
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\TopDownGridBasedEngine.exe
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\TopDownGridBasedEngine.pdb
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\MonoGame.Framework.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\MonoGame.Penumbra.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.XAudio2.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.DXGI.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.Direct3D11.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.Direct2D1.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.XInput.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\MonoGame.Framework.xml
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\bin\Debug\MonoGame.Penumbra.xml
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\obj\Debug\TopDownGridBasedEngine.csprojResolveAssemblyReference.cache
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\obj\Debug\TopDownGridBasedEngine.exe
+C:\Users\Sam\RiderProjects\TestProject\TopDownGridBasedEngine\obj\Debug\TopDownGridBasedEngine.pdb

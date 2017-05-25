@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBomb1.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBomb2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBomb4.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusExtraBomb.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusExtraBomb2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusKick.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusKick2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusMaxExplosion.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusMaxExplosion2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusPower.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusPower2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusShoot.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusShoot2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusSpeed.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureBonusSpeed2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureCaseFire1.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureCaseFire2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureCaseSolidWall.bmp</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureCaseVide.bmp</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TextureCaseWall.bmp</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerBack1.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerBack2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerBack4.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerFront1.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerFront2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerFront4.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerLeft1.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerLeft2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerLeft4.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerRight1.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerRight2.png</File>
+    <File>C:/Users/Sam/RiderProjects/TestProject/TopDownGridBasedEngine/Content/Textures/TexturePlayerRight4.png</File>
+  </SourceFiles>
+</SourceFileCollection>
