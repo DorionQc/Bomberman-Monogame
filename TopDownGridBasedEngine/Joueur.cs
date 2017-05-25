@@ -73,12 +73,22 @@ namespace TopDownGridBasedEngine
             _carryingBomb = false;
 
             _idJoueur = id;
+
+            Lights = new Light[2];
             
-            Light = new Spotlight();
-            Light.Color = Color.Yellow;
-            Light.Scale = new Vector2(100, 300);
-            Light.ShadowType = ShadowType.Solid;
-            Game1.Penumbra.Lights.Add(Light);
+            Lights[0] = new Spotlight();
+            Lights[0].Color = Color.Yellow;
+            Lights[0].Scale = new Vector2(100, 300);
+            Lights[0].ShadowType = ShadowType.Solid;
+            Game1.Penumbra.Lights.Add(Lights[0]);
+            
+            Lights[1] = new PointLight();
+            Lights[1].Color = Color.Teal;
+            Lights[1].Intensity = 1f;
+            Lights[1].Scale = new Vector2(300, 300);
+            Lights[1].ShadowType = ShadowType.Solid;
+            Game1.Penumbra.Lights.Add(Lights[1]);
+            
 
             ChangedCase += Joueur_ChangedCase;
             Collided += Joueur_Collided;
@@ -86,12 +96,13 @@ namespace TopDownGridBasedEngine
             Died += Die;
         }
         
-        public Light Light { get; }
+        public Light[] Lights { get; }
 
         public void Die(object sender, CancellableEventArgs e)
         {
             IsDead = true;
-            Game1.Penumbra.Lights.Remove(Light);
+            Game1.Penumbra.Lights.Remove(Lights[0]);
+            Game1.Penumbra.Lights.Remove(Lights[1]);
             //MessageBox.Show("Ayyyyyyyy!! I'm dead!");
         }
 
@@ -104,10 +115,12 @@ namespace TopDownGridBasedEngine
                 Bomb.FireMoved(Bomb, new CancellableEventArgs(false));
             }
 
-            Light.Position = new Vector2(X * Map.Width / Map.EntityPixelPerCase,
-                Y * Map.Width / Map.EntityPixelPerCase);
-
-            Light.Rotation = (float)Math.Atan2(-VelX, VelY) + MathHelper.PiOver2;
+            for (int i = 0; i < 2; i++)
+            {
+                Lights[i].Position = new Vector2(X * Map.Width / Map.EntityPixelPerCase,
+                    Y * Map.Width / Map.EntityPixelPerCase);
+            }
+            Lights[0].Rotation = (float) Math.Atan2(-VelX, VelY) + MathHelper.PiOver2;
         }
 
         private void Joueur_Collided(object sender, BlockCollisionEventArgs e)
