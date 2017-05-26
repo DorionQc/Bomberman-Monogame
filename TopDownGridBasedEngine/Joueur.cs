@@ -78,7 +78,7 @@ namespace TopDownGridBasedEngine
             
             Lights[0] = new Spotlight();
             Lights[0].Color = Color.Yellow;
-            Lights[0].Scale = new Vector2(100, 300);
+            Lights[0].Scale = new Vector2(200, 300);
             Lights[0].ShadowType = ShadowType.Solid;
             Game1.Penumbra.Lights.Add(Lights[0]);
             
@@ -120,7 +120,8 @@ namespace TopDownGridBasedEngine
                 Lights[i].Position = new Vector2(X * Map.Width / Map.EntityPixelPerCase,
                     Y * Map.Width / Map.EntityPixelPerCase);
             }
-            Lights[0].Rotation = (float) Math.Atan2(-VelX, VelY) + MathHelper.PiOver2;
+            if (!(VelX == 0 && VelY == 0))
+                Lights[0].Rotation = (float) Math.Atan2(-VelX, VelY) + MathHelper.PiOver2;
         }
 
         private void Joueur_Collided(object sender, BlockCollisionEventArgs e)

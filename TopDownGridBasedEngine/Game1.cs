@@ -12,7 +12,7 @@ namespace TopDownGridBasedEngine
         private SpriteBatch _spriteBatch;
         private KeyWrapper _wrapper;
         private Map _map;
-        private Joueur[] _joueurs;
+        public static Joueur[] Joueurs;
         
         public static PenumbraComponent Penumbra;
         
@@ -36,7 +36,7 @@ namespace TopDownGridBasedEngine
             base.Initialize();
             
             _map = new Map(29, Window.ClientBounds);
-            _joueurs = new Joueur[4];
+            Joueurs = new Joueur[4];
             _wrapper = new KeyWrapper(0, 0, 0);
 
             
@@ -51,21 +51,23 @@ namespace TopDownGridBasedEngine
             
             for (int i = 0; i < 1; i++)
             {
-                _joueurs[i] = new Joueur(DefaultLocations[i, 0], DefaultLocations[i, 1], _map, (byte)i);
+                Joueurs[i] = new Joueur(DefaultLocations[i, 0], DefaultLocations[i, 1], _map, (byte)i);
             }
             
-            _joueurs[0].Moved += OnPlayerMoved;
-            _joueurs[0].DroppedBomb += OnPlayerDroppedBomb;
-            _joueurs[0].BombExploded += OnPlayerBombExploded;
-            _joueurs[0].PickedBomb += OnPlayerPickedBomb;
-            _joueurs[0].KickedBomb += OnPlayerKickedBomb;
-            _joueurs[0].Died += OnPlayerDied;
-            _joueurs[0].ShotBomb += OnPlayerShotBomb;
-            _joueurs[0].PickedBonus += OnPlayerPickedBonus;
-            _joueurs[0].BombBrokeBlocks += OnPlayerBombBrokeBlocks;
-            _joueurs[0].BombPlacedBonus += OnPlayerBombPlacedBonus;
             
-            EntityManager.InitInstance(_joueurs, _map, 0);
+            
+            Joueurs[0].Moved += OnPlayerMoved;
+            Joueurs[0].DroppedBomb += OnPlayerDroppedBomb;
+            Joueurs[0].BombExploded += OnPlayerBombExploded;
+            Joueurs[0].PickedBomb += OnPlayerPickedBomb;
+            Joueurs[0].KickedBomb += OnPlayerKickedBomb;
+            Joueurs[0].Died += OnPlayerDied;
+            Joueurs[0].ShotBomb += OnPlayerShotBomb;
+            Joueurs[0].PickedBonus += OnPlayerPickedBonus;
+            Joueurs[0].BombBrokeBlocks += OnPlayerBombBrokeBlocks;
+            Joueurs[0].BombPlacedBonus += OnPlayerBombPlacedBonus;
+            
+            EntityManager.InitInstance(Joueurs, _map, 0);
             
             
         }
@@ -149,7 +151,7 @@ namespace TopDownGridBasedEngine
             if (!(sender is Bomb))
                 return;
             Bomb b = (Bomb)sender;
-            if (!(b.Owner == _joueurs[0]))
+            if (!(b.Owner == Joueurs[0]))
                 return;
             if (!(e.Case is CaseBonus))
                 return;
@@ -168,7 +170,7 @@ namespace TopDownGridBasedEngine
             if (!(sender is Bomb))
                 return;
             Bomb b = (Bomb)sender;
-            if (b.Owner != _joueurs[0])
+            if (b.Owner != Joueurs[0])
                 return;
             //Console.WriteLine("Bomb broke ");
             //foreach (AbsCase c in e.Cases)
@@ -189,7 +191,7 @@ namespace TopDownGridBasedEngine
             if (!(sender is Bomb))
                 return;
             Bomb b = (Bomb)sender;
-            if (!(b.Owner == _joueurs[0]))
+            if (!(b.Owner == Joueurs[0]))
                 return;
             //Console.WriteLine("Bomb exploded at " + e.Case.X + ", " + e.Case.Y);
             // On envoie un paquet pour dire que la bombe a explosé!

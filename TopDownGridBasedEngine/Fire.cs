@@ -62,7 +62,7 @@ namespace TopDownGridBasedEngine
 
         public void Update()
         {
-            Game1.Penumbra.Lights.Remove(Light);
+            
             AbsCase c = Map[X / 30, Y / 30];
             CaseVide vide = c as CaseVide;
             
@@ -70,6 +70,8 @@ namespace TopDownGridBasedEngine
                 vide.Fire = null;
             else
                 Map[X / 30, Y / 30] = new CaseVide(X / 30, Y / 30, Map);
+            
+            Game1.Penumbra.Lights.Remove(Light);
             
             EntityManager.Instance.Remove(this);
         }

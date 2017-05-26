@@ -122,12 +122,12 @@ namespace TopDownGridBasedEngine
                         if (this[x, y].Hull != null)
                         {
                             Game1.Penumbra.Hulls.Remove(this[x, y].Hull);
-                            Light l = Game1.Penumbra.Lights.FirstOrDefault();
-                            if (l != null)
-                            {
-                                l.Position += Vector2.One;
-                                l.Position -= Vector2.One;
-                            }
+                            if (Game1.Joueurs != null)
+                                foreach (Light light in Game1.Joueurs[0].Lights)
+                                {
+                                    light.Position += Vector2.One;
+                                    light.Position -= Vector2.One;
+                                }
                         }
                         if (this[x, y].Fire != null)
                             this[x, y].Fire = null;
